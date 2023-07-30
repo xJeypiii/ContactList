@@ -1,0 +1,27 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.4.1' apply false
+    id 'com.android.library' version '7.4.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.8.0' apply false
+    id 'com.google.dagger.hilt.android' version '2.47' apply false
+}
+
+ext {
+    min_version = 24
+    target_version = 33
+    compile_version = 33
+
+    core_ktx = '1.7.0'
+    appcompat = '1.6.1'
+    material = '1.5.0'
+    constraintlayout = '2.1.4'
+    navigation_fragment_ktx= '2.6.0'
+    navigation_ui_ktx = '2.6.0'
+    sdp_android = '1.1.0'
+    dagger = '2.44'
+    roomVersion = '2.3.0'
+
+    junit = '4.13.2'
+    ext_junit = '1.1.5'
+    espresso_core = '3.5.1'
+}

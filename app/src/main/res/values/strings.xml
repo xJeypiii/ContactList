@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Contact List</string>
+    <string name="contact_list">Contacts</string>
+    <string name="contact_detail">Contact Detail</string>
+    <string name="format_name">%1$s, %2$s</string>
+
+
+
+
+    <string name="action_settings">Settings</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        message
+    </string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="favorite">Favorite</string>
+    <string name="save">Save</string>
+    <string name="action_add">Add</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+</resources>

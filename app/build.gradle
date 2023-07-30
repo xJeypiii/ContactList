@@ -1,0 +1,51 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'com.google.dagger.hilt.android'
+}
+
+android {
+    namespace 'com.codev.recruitment.brionesjohnpaul'
+    compileSdk rootProject.compile_version
+
+    defaultConfig {
+        applicationId "com.codev.recruitment.brionesjohnpaul"
+        minSdk rootProject.min_version
+        targetSdk rootProject.target_version
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        dataBinding true
+    }
+    packagingOptions {
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
+}
+
+apply from: '../core_dependencies.gradle'
+dependencies {
+    implementation project(':lib')
+    implementation project(':repository')
+}
+
+kapt {
+    correctErrorTypes true
+}
