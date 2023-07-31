@@ -10,7 +10,9 @@ dependencies {
 
     implementation "com.google.dagger:hilt-android:$rootProject.dagger"
     kapt "com.google.dagger:hilt-compiler:$rootProject.dagger"
-    kapt "androidx.hilt:hilt-compiler:1.0.0"
+    kapt "androidx.hilt:hilt-compiler:$rootProject.hilt"
+
+    implementation "net.zetetic:android-database-sqlcipher:$rootProject.sqlcipher"
 
     implementation "androidx.room:room-ktx:$rootProject.roomVersion"
     kapt "androidx.room:room-compiler:$rootProject.roomVersion"
